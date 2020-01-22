@@ -1,15 +1,11 @@
 "use strict";
 
-//console.log("hello world");
+const target = { a: 1 };
 
-//1. babel lib -d build\lib
-//2. npm run build
+const source1 = { b: 2 };
+const source2 = { c: 3 };
 
-var a = 2;
-{
-    let a = 3;
-    console.log("in:", a);
-}
+Object.assign(target, source1, source2);
 
-console.log("out:", a);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2xpYi9pbmRleC5qcyJdLCJuYW1lcyI6WyJhIiwiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFFQTtBQUNBOztBQUVBLElBQUlBLElBQUksQ0FBUjtBQUNBO0FBQ0ksUUFBSUEsSUFBSSxDQUFSO0FBQ0FDLFlBQVFDLEdBQVIsQ0FBWSxLQUFaLEVBQW1CRixDQUFuQjtBQUNIOztBQUVEQyxRQUFRQyxHQUFSLENBQVksTUFBWixFQUFvQkYsQ0FBcEIiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyIvL2NvbnNvbGUubG9nKFwiaGVsbG8gd29ybGRcIik7XHJcblxyXG4vLzEuIGJhYmVsIGxpYiAtZCBidWlsZFxcbGliXHJcbi8vMi4gbnBtIHJ1biBidWlsZFxyXG5cclxudmFyIGEgPSAyO1xyXG57XHJcbiAgICBsZXQgYSA9IDM7XHJcbiAgICBjb25zb2xlLmxvZyhcImluOlwiLCBhKTtcclxufVxyXG5cclxuY29uc29sZS5sb2coXCJvdXQ6XCIsIGEpOyJdfQ==
+console.log(target); // {a:1, b:2, c:3}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2xpYi9pbmRleC5qcyJdLCJuYW1lcyI6WyJ0YXJnZXQiLCJhIiwic291cmNlMSIsImIiLCJzb3VyY2UyIiwiYyIsIk9iamVjdCIsImFzc2lnbiIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7O0FBQ0EsTUFBTUEsU0FBUyxFQUFFQyxHQUFHLENBQUwsRUFBZjs7QUFFQSxNQUFNQyxVQUFVLEVBQUVDLEdBQUcsQ0FBTCxFQUFoQjtBQUNBLE1BQU1DLFVBQVUsRUFBRUMsR0FBRyxDQUFMLEVBQWhCOztBQUVBQyxPQUFPQyxNQUFQLENBQWNQLE1BQWQsRUFBc0JFLE9BQXRCLEVBQStCRSxPQUEvQjs7QUFFQUksUUFBUUMsR0FBUixDQUFZVCxNQUFaLEUsQ0FBb0IiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuY29uc3QgdGFyZ2V0ID0geyBhOiAxIH07XHJcblxyXG5jb25zdCBzb3VyY2UxID0geyBiOiAyIH07XHJcbmNvbnN0IHNvdXJjZTIgPSB7IGM6IDMgfTtcclxuXHJcbk9iamVjdC5hc3NpZ24odGFyZ2V0LCBzb3VyY2UxLCBzb3VyY2UyKTtcclxuXHJcbmNvbnNvbGUubG9nKHRhcmdldCkgLy8ge2E6MSwgYjoyLCBjOjN9Il19
