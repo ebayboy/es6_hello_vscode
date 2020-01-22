@@ -1,0 +1,18 @@
+{
+  "name": "firstnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib -d build/lib -s inline",
+    "babelWatch": "babel lib/**/*.js -d build -w -s inline",
+    "releaseBuild": "babel lib -d release/lib --no-comments --compact true --minified"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-eslatest-node6": "^1.0.1"
+  }
+}
