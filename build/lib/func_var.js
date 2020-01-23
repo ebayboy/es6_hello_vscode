@@ -1,0 +1,14 @@
+'use strict';
+
+/* 函数变量 */
+
+function handleClick(type) {
+    console.log(type);
+}
+
+handleClick('fanpf');
+
+let func_a = handleClick;
+
+func_a('rose');
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2xpYi9mdW5jX3Zhci5qcyJdLCJuYW1lcyI6WyJoYW5kbGVDbGljayIsInR5cGUiLCJjb25zb2xlIiwibG9nIiwiZnVuY19hIl0sIm1hcHBpbmdzIjoiOztBQUNBOztBQUVBLFNBQVNBLFdBQVQsQ0FBcUJDLElBQXJCLEVBQTJCO0FBQ3ZCQyxZQUFRQyxHQUFSLENBQVlGLElBQVo7QUFDSDs7QUFFREQsWUFBWSxPQUFaOztBQUVBLElBQUlJLFNBQVNKLFdBQWI7O0FBRUFJLE9BQU8sTUFBUCIsImZpbGUiOiJmdW5jX3Zhci5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4vKiDlh73mlbDlj5jph48gKi9cclxuXHJcbmZ1bmN0aW9uIGhhbmRsZUNsaWNrKHR5cGUpIHtcclxuICAgIGNvbnNvbGUubG9nKHR5cGUpXHJcbn1cclxuXHJcbmhhbmRsZUNsaWNrKCdmYW5wZicpXHJcblxyXG5sZXQgZnVuY19hID0gaGFuZGxlQ2xpY2tcclxuXHJcbmZ1bmNfYSgncm9zZScpXHJcbiJdfQ==
